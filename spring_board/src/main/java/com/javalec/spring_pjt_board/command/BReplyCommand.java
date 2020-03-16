@@ -17,12 +17,12 @@ public class BReplyCommand implements BCommand {
 		HttpServletRequest request = (HttpServletRequest) map.get("request");
 		
 		String bId = request.getParameter("bId");
-		String bName = request.getParameter("bId");
-		String bTitle = request.getParameter("bId");
-		String bContent = request.getParameter("bId");
-		String bGroup = request.getParameter("bId");
-		String bStep = request.getParameter("bId");
-		String bIndent = request.getParameter("bId");
+		String bName = request.getParameter("bName");
+		String bTitle = request.getParameter("bTitle");
+		String bContent = request.getParameter("bContent");
+		String bGroup = request.getParameter("bGroup");
+		String bStep = request.getParameter("bStep");
+		String bIndent = request.getParameter("bIndent");
 		
 		BDao dao = new BDao();
 		dao.reply(bId, bName, bTitle, bContent, bGroup, bStep, bIndent);

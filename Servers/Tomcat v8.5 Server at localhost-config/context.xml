@@ -31,10 +31,10 @@
     maxActive="50"
     maxWait="1000"
     name="jdbc/Oracle11g"
-    password="hr2"
+    password="bituser"
     type="javax.sql.DataSource"
     factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
     url="jdbc:oracle:thin:@localhost:1521:xe"
-    username="hr2"
+    username="bituser"
     />
 </Context>

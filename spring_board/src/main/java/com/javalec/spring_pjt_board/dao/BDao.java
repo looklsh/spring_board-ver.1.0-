@@ -285,9 +285,9 @@ public class BDao {
 					
 			preparedStatement = connection.prepareStatement(query);
 			
-			preparedStatement.setString(1, "bName");
-			preparedStatement.setString(2, "bTitle");
-			preparedStatement.setString(3, "bContent");
+			preparedStatement.setString(1, bName);
+			preparedStatement.setString(2, bTitle);
+			preparedStatement.setString(3, bContent);
 			
 			int rn = preparedStatement.executeUpdate();
 		} catch (Exception e) {
@@ -313,7 +313,7 @@ public class BDao {
 		// TODO Auto-generated constructor stub
 		try {
 		Context context = new InitialContext();
-		dataSource = (DataSource) context.lookup("java:comp/env/jdbc/Oracle11g"); // jdbc/Oracle11g 에 해당하는 객체를 찾아 넣어줌
+		dataSource = (DataSource) context.lookup("java:comp/env/jdbc/Oracle11g"); // jdbc/Oracle11g �뿉 �빐�떦�븯�뒗 媛앹껜瑜� 李얠븘 �꽔�뼱以�
 		}catch(NamingException e){
 			e.printStackTrace();
 		}
